@@ -6,7 +6,7 @@
     <title></title>
     <style>
         body {
-            display: flex;
+            margin: 0;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -14,11 +14,38 @@
             text-align: center;
             font-family: Arial, sans-serif;
             color: white;
-            font-size: 50px;
+        }
+        .navbar {
+            background-color: #3a3a3a;
+            overflow: hidden;
+            display: flex;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: #B8860B;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            text-shadow: 0.5px 0.5px #ffffff;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
         }
     </style>
 </head>
 <body>
-    <p style="color: #B8860B">Error 404</p>
+    <div class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="error.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p style="color: #B8860B; font-size: 50px;">Error 404</p>
 </body>
+
+<footer style="position: absolute; bottom: 0;">
+    <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">Emil Dimov</p>
+</footer>
 </html>

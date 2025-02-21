@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,20 @@
             text-align: center;
             font-family: Arial, sans-serif;
             color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+
+        .container>div {
+            background-color: #f1f1f1;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
         }
         .navbar {
             background-color: #3a3a3a;
@@ -35,6 +50,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="navbar">
         <a href="Index.html">Home</a>
@@ -42,10 +58,14 @@
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </div>
-    <p style="color: #B8860B; font-size: 50px;">Congratulations!</p>
+    <div style="font-size: 50px; color: #B8860B; border-color: white; margin-top: 10%; margin-left: 20vw;" class="container">
+        <div>+0771234567</div>
+        <div>Pernik</div>
+    </div>
 </body>
 
 <footer style="position: absolute; bottom: 0;">
     <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">Emil Dimov</p>
 </footer>
+
 </html>
